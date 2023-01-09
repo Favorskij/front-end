@@ -1,0 +1,18 @@
+
+voter-parent <br>
+voter-child <br>
+4.2 Родитель прослушивает дочернее событие
+
+<br>
+---
+<br>
+
+<h3>Согласен: {{agreed}}, Не согласен: {{disagreed}}</h3>
+
+<app-voter-child
+
+  *ngFor="let voter of voters"
+
+  [name]="voter"
+
+  (voted)="onVoted($event)"></app-voter-child>

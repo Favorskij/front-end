@@ -1,0 +1,17 @@
+zippy-template <br>
+@Directive app.component.ts <br>
+23. Условное проецирование контента ng-template => TemplateRef, @ContentChild, ng-container, ngTemplateOutlet
+
+<br>
+---
+<br>
+
+
+<!--Получаем шаблон-->
+<ng-container [ngTemplateOutlet]="content.templateRef"></ng-container>
+
+
+<div *ngIf="expanded" [id]="contentId">
+  <ng-container [ngTemplateOutlet]="content.templateRef"></ng-container>
+</div>
+

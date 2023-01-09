@@ -1,0 +1,13 @@
+countdown-parent-two <br>
+countdown-child-two <br>
+Более понятный пример показан в пункте 17.2<br>
+17.1 Доступ к дочерним свойствам при помощи аннотации <h3>@ViewChild()</h3>
+
+---
+<br><br>
+
+<button (click)="start()">Start</button>
+<button (click)="stop()">Stop</button>
+<div class="seconds">{{ seconds() }}</div>
+
+<app-countdown-child-two></app-countdown-child-two>

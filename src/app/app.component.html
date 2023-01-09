@@ -1,0 +1,270 @@
+<!--1-->
+<!--Импорт, экспорт данных-->
+<app-data-import-export></app-data-import-export>
+
+<hr>
+
+<!--2-->
+<!--интерполяция-->
+<app-interpolation></app-interpolation>
+
+<hr>
+
+<!--3.1-->
+<!--Передача данных из родительского компонента к дочернему.-->
+<app-broadcast-parent></app-broadcast-parent>
+
+<hr>
+
+for-of-data-parent <br>
+for-of-data-child <br>
+3.2 Передача параметров из родительского компонента в дочерний.
+
+<br>
+---
+<br>
+
+<!--3.2-->
+<!--Передача данных из родительского компонента к дочернему.-->
+<app-for-of-data-parent></app-for-of-data-parent>
+
+
+<hr>
+
+<!--4.1-->
+<!--Передача данных от дочернего компонента к родительскому компоненту-->
+<app-cast-parent></app-cast-parent>
+
+<hr>
+
+<!--4.2-->
+<!--Передача данных от дочернего компонента к родительскому компоненту-->
+<app-voter-parent></app-voter-parent>
+
+
+<hr>
+
+<!--4-->
+<!--Перебор массива *ngFor.-->
+<app-for-of-data></app-for-of-data>
+
+<hr>
+
+<!--5-->
+<!--ngIf else. Меняем шаблоны-->
+<app-ng-if-template></app-ng-if-template>
+
+<hr>
+
+
+<!--6-->
+<!--Установка в селектор id, style, disabled и другие атрибуты-->
+<app-attributes></app-attributes>
+
+<hr>
+
+<!--7-->
+<!--Получение события по клику-->
+<app-button-click></app-button-click>
+
+<hr>
+
+
+<!--8-->
+<!--Внедрение зависимостей @Injectable()-->
+<app-injectable></app-injectable>
+
+
+<hr>
+
+<!--10-->
+<!--router-->
+<router-outlet></router-outlet>
+
+<hr>
+
+<!--11-->
+<!--currencyCode-->
+<!--{{ product.price | currency : 'РУБ ' }}-->
+<app-currency></app-currency>
+
+<hr>
+
+<!--12-->
+<!--HttpClient-->
+<app-http-client></app-http-client>
+
+<hr>
+
+<!--13-->
+<!--forms-->
+<app-form></app-form>
+
+<hr>
+
+<!--14-->
+<!--Перехват входных параметров @Input() при помощи get set-->
+<app-name-parent></app-name-parent>
+
+<hr>
+
+<!--15-->
+<!--Перехватите изменения свойств ввода с помощью ngOnChanges()-->
+<app-version-parent></app-version-parent>
+
+<hr>
+
+<!--16.1-->
+<!--Доступ к дочерним свойствам при помощи локальной переменной #variab-->
+<app-countdown-parent-one></app-countdown-parent-one>
+
+
+<hr>
+
+
+<!--16.2-->
+<!--Получение данных из #input-->
+<app-input-get></app-input-get>
+
+<hr>
+
+<!--17.1-->
+<!--Доступ к дочерним свойствам при помощи аннотации @ViewChild()-->
+<!--Более понятный пример показан в пункте 17.2-->
+<app-countdown-parent-two></app-countdown-parent-two>
+
+
+<hr>
+
+<!--17.2-->
+<!--Доступ к дочерним свойствам при помощи аннотации @ViewChild()-->
+<!--На мой взгляд, не очен хороший способ.-->
+<app-countdown-parent-three></app-countdown-parent-three>
+
+
+<hr>
+
+<!--18-->
+<!--Родитель и дети общаются с помощью сервиса-->
+<app-service-parent></app-service-parent>
+
+
+
+<hr>
+
+<!--19-->
+<!--Однослотовая проекция контента-->
+<app-zippy-basic>
+  <p>Это Single-slot проекция контента</p>
+</app-zippy-basic>
+
+
+<hr>
+
+
+<!--20-->
+<!--Проекция мультислотового контента-->
+<app-zippy-multislot>
+
+  <p question="">Это проекция с атрибутов</p>
+
+  <p>Это Single-slot проекция контента</p>
+
+</app-zippy-multislot>
+
+
+
+<hr>
+
+
+<!--21.-->
+<!--Добавление аттрибутов в узел при помощи аннотации @Directive() и @HostBinding()-->
+<app-directive>
+
+
+  <button toggleButton>Пример 1</button>
+  <p paragraph>Пример 2</p>
+  <div divContent>Пример 3</div>
+  <h4 h4Content>Пример 4</h4>
+
+</app-directive>
+
+
+
+
+<hr>
+
+
+<!--22.-->
+<!--Аннотация @HostListener('click')-->
+<app-host-listener>
+
+  <button hostListenerButton>Кнопка Host Listener</button>
+  <p paragraphListener>Нажатие кнопки тут</p>
+
+</app-host-listener>
+
+
+<hr>
+
+
+<!--23.-->
+<!--Условное проецирование контента ng-template => TemplateRef, @ContentChild, ng-container, ngTemplateOutlet-->
+<app-zippy-template>
+  <ng-template appContent>Мой шаблон</ng-template>
+</app-zippy-template>
+
+
+
+<hr>
+
+
+
+
+<!--24.-->
+<!--ngProjectAs Проектирование контента в более сложных средах -->
+
+<app-ng-project-as>
+
+  <p>Простой контент</p>
+
+  <ng-container ngProjectAs="[questionAs]"><p>Селектор контент ngProjectAs</p></ng-container>
+
+</app-ng-project-as>
+
+
+<hr>
+
+
+<!--25.1-->
+<!--Динамический загрузчик компонентов.-->
+<!--Сложная для понимания версия-->
+<!--Dynamic component loader-->
+<app-ad-banner [ads]="ads"></app-ad-banner>
+
+
+<hr>
+
+<!--25.2-->
+<!--Динамический загрузчик компонентов.-->
+<!--Лёгкая для понимания версия-->
+<!--Dynamic component loader-->
+<app-dynamic-banner></app-dynamic-banner>
+
+
+<hr>
+
+
+<!--26.1-->
+<!--custom elements -->
+
+<app-popup-parent></app-popup-parent>
+
+
+
+<hr>
+
+<!--26.2-->
+<!--custom component -->
+<!--https://angular.io/guide/elements#angular-elements-overview-->
+<app-pop-parent></app-pop-parent>

@@ -1,0 +1,13 @@
+
+version-parent <br>
+version-child <br>
+15. Перехватите изменения свойств ввода с помощью жизненного цикла ngOnChanges()
+
+<br>
+---
+<br><br>
+
+
+<button (click)="newMajor()">Новая мажорная версия</button>
+<button (click)="newMinor()">Новая минорная версия</button>
+<app-version-child [major]="major" [minor]="minor"></app-version-child>

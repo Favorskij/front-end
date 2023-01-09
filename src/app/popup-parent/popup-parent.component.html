@@ -1,0 +1,13 @@
+popup <br>
+popup-parent <br>
+popup.service.ts <br>
+26.1 custom elements
+
+<br>
+---
+<br>
+
+<!--Сообщение которое передаётся в дочерний компонент-->
+<input #input value="Message">
+
+<button (click)="popup.showAsElement(input.value)">Показать элемент</button><br>

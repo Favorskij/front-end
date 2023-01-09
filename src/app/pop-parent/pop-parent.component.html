@@ -1,0 +1,14 @@
+pop <br>
+pop-parent <br>
+pop.service.ts <br>
+26.2 custom component
+<!--https://angular.io/guide/elements#angular-elements-overview-->
+
+<br>
+---
+<br>
+
+<!--Сообщение которое передаётся в дочерний компонент-->
+<input #input value="Message">
+
+<button (click)="pop.showAsComponent(input.value)">Показать элемент</button><br>

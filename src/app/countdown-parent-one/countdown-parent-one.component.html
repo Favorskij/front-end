@@ -1,0 +1,15 @@
+countdown-parent-one <br>
+countdown-child-one <br>
+16.1 Доступ к дочерним свойствам при помощи локальной переменной <h3>#variab</h3>
+
+<br>
+---
+<br><br>
+
+<button (click)="timer.start()">Start</button>
+<button (click)="timer.stop()">Stop</button>
+
+<div class="seconds">{{timer.seconds}}</div>
+
+<!--#timer даёт доступ к дочерним свойствам-->
+<app-countdown-child-one #timer></app-countdown-child-one>

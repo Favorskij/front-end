@@ -1,0 +1,19 @@
+
+item-page <br>
+item-url <br>
+10. router.
+
+<br>
+---
+<br>
+
+<p>Главная страница</p>
+
+<div *ngFor="let item of items">
+
+    <a [routerLink]="['/item', item.id]">
+      Ссылка на товар
+    </a>
+
+</div>
+

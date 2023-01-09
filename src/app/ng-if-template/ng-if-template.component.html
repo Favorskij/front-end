@@ -1,0 +1,27 @@
+ng-if <br>
+5. ngIf else.
+
+<br>
+---
+<br><br>
+
+
+<div *ngIf="price > 2">
+  Показал потому что 5 > 2
+</div>
+
+<br>
+
+<button (click)="onEditClick()">Изменить текст</button>
+
+<div *ngIf="canEdit; else noEdit">
+  <p>Главный текст</p>
+</div>
+
+<ng-template #noEdit>
+  <p>Изменили текст</p>
+</ng-template>
+
+
+
+
